@@ -21,6 +21,7 @@ user_date = date_class(user_month, user_day, user_year, user_time)
 difference = (user_date.date - datetime.now()).total_seconds()
 time.sleep(difference)
 print("hello")
+print("Test")
 
 
 
