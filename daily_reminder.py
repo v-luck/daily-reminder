@@ -1,6 +1,7 @@
 import time
 import datetime
 from datetime import datetime
+from datetime import date
 class date_class():
     def __init__(self, month, day, year, time):
         self.month = month
@@ -16,14 +17,12 @@ if not user_year:
     user_year = datetime.today().year
 user_time = input("Insert a time. Make sure to include AM and PM")
 user_date = date_class(user_month, user_day, user_year, user_time)
-print(user_date.date)
+
+difference = (user_date.date - datetime.now()).total_seconds()
+time.sleep(difference)
+print("hello")
 
 
-#user_input = "Jun 1 2005 1:33PM"
-#datetime_object = datetime.strptime(user_input, '%b %d %Y %I:%M%p')
-#print(datetime_object)
-
-#user_date = date_class(monthDict[int(input("Insert month number:"))], input("Insert day:"), )
 
 
 
